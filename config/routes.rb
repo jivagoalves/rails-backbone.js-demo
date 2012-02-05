@@ -1,5 +1,7 @@
 RailsBackboneJsDemo::Application.routes.draw do
-  root :to => 'pages#home'
+  resources :tasks
+
+  root :to => 'tasks#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
