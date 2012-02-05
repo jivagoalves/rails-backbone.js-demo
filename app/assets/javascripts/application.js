@@ -11,7 +11,6 @@
 //= require backbone
 //= require backbone.authtokenadapter
 //
-//= require rails_backbone.js_demo
 //
 //= require_tree ./models
 //= require_tree ./collections
