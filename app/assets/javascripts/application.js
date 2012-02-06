@@ -11,6 +11,7 @@
 //= require backbone
 //= require backbone.authtokenadapter
 //
+//= require my_app
 //
 //= require_tree ./models
 //= require_tree ./collections
