@@ -1,7 +1,9 @@
 MyApp.Routers.Tasks = Backbone.Router.extend({
   routes: {
-    "": "index"
+    "": "index",
+    "new": "newTask"
   },
+
   index: function() {
     var tasks = new MyApp.Collections.Tasks();
     tasks.fetch({
@@ -12,6 +14,10 @@ MyApp.Routers.Tasks = Backbone.Router.extend({
         new Error({ message: "Error on loading tasks."});
       }
     });
+  },
+
+  newTask: function() {
+    new MyApp.Views.New({ model: new MyApp.Models.Task() })
   }
 });
 
